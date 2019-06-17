@@ -2568,37 +2568,88 @@
         </group>
         <group>
             <name>modules</name>
+            <group>
+                <name>rgb_led</name>
+                <group>
+                    <name>ws2812b</name>
+                    <file>
+                        <name>$PROJ_DIR$\..\Drivers\modules\rgb_led\ws2812b\ws2812b.c</name>
+                    </file>
+                    <file>
+                        <name>$PROJ_DIR$\..\Drivers\modules\rgb_led\ws2812b\ws2812b.h</name>
+                    </file>
+                </group>
+            </group>
         </group>
         <group>
             <name>platform</name>
             <group>
-                <name>pwr_mng</name>
+                <name>iwdg</name>
                 <file>
-                    <name>$PROJ_DIR$\..\Drivers\platform\pwr_mng\pwr.c</name>
+                    <name>$PROJ_DIR$\..\Drivers\platform\keyboard\iwdg\iwdg.c</name>
                 </file>
                 <file>
-                    <name>$PROJ_DIR$\..\Drivers\platform\pwr_mng\pwr.h</name>
+                    <name>$PROJ_DIR$\..\Drivers\platform\keyboard\iwdg\iwdg.h</name>
+                </file>
+            </group>
+            <group>
+                <name>lptim</name>
+                <file>
+                    <name>$PROJ_DIR$\..\Drivers\platform\keyboard\lptim1\lptim.c</name>
+                </file>
+                <file>
+                    <name>$PROJ_DIR$\..\Drivers\platform\keyboard\lptim1\lptim.h</name>
+                </file>
+            </group>
+            <group>
+                <name>pwr_mng</name>
+                <file>
+                    <name>$PROJ_DIR$\..\Drivers\platform\keyboard\pwr_mng\pwr.c</name>
+                </file>
+                <file>
+                    <name>$PROJ_DIR$\..\Drivers\platform\keyboard\pwr_mng\pwr.h</name>
+                </file>
+            </group>
+            <group>
+                <name>rtc</name>
+                <file>
+                    <name>$PROJ_DIR$\..\Drivers\platform\keyboard\rtc\stm32l4\stm32l4_rtc.c</name>
+                </file>
+                <file>
+                    <name>$PROJ_DIR$\..\Drivers\platform\keyboard\rtc\stm32l4\stm32l4_rtc.h</name>
                 </file>
             </group>
             <group>
                 <name>serial</name>
                 <file>
-                    <name>$PROJ_DIR$\..\Drivers\platform\serial\com_port1.c</name>
+                    <name>$PROJ_DIR$\..\Drivers\platform\keyboard\serial\com_port1.c</name>
                 </file>
                 <file>
-                    <name>$PROJ_DIR$\..\Drivers\platform\serial\com_port1.h</name>
+                    <name>$PROJ_DIR$\..\Drivers\platform\keyboard\serial\com_port1.h</name>
                 </file>
                 <file>
-                    <name>$PROJ_DIR$\..\Drivers\platform\serial\com_port2.c</name>
+                    <name>$PROJ_DIR$\..\Drivers\platform\keyboard\serial\com_port2.c</name>
                 </file>
                 <file>
-                    <name>$PROJ_DIR$\..\Drivers\platform\serial\com_port2.h</name>
+                    <name>$PROJ_DIR$\..\Drivers\platform\keyboard\serial\com_port2.h</name>
                 </file>
                 <file>
-                    <name>$PROJ_DIR$\..\Drivers\platform\serial\serialx.c</name>
+                    <name>$PROJ_DIR$\..\Drivers\platform\keyboard\serial\serialx.c</name>
                 </file>
                 <file>
-                    <name>$PROJ_DIR$\..\Drivers\platform\serial\serialx.h</name>
+                    <name>$PROJ_DIR$\..\Drivers\platform\keyboard\serial\serialx.h</name>
+                </file>
+            </group>
+            <group>
+                <name>spi</name>
+                <file>
+                    <name>$PROJ_DIR$\..\Drivers\platform\keyboard\spi\spi3.c</name>
+                </file>
+                <file>
+                    <name>$PROJ_DIR$\..\Drivers\platform\keyboard\spi\spi3.h</name>
+                </file>
+                <file>
+                    <name>$PROJ_DIR$\..\Drivers\platform\keyboard\spi\spix.h</name>
                 </file>
             </group>
         </group>

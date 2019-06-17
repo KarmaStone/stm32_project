@@ -31,7 +31,7 @@ void HAL_Sysclk_Init(void)
 		Error_Handler(__FILE__, __LINE__);
 	}
 	/** Initializes the CPU, AHB and APB busses clocks 
-  */
+    */
 	RCC_ClkInitStruct.ClockType = RCC_CLOCKTYPE_HCLK | RCC_CLOCKTYPE_SYSCLK | RCC_CLOCKTYPE_PCLK1 | RCC_CLOCKTYPE_PCLK2;
 	RCC_ClkInitStruct.SYSCLKSource = RCC_SYSCLKSOURCE_PLLCLK;
 	RCC_ClkInitStruct.AHBCLKDivider = RCC_SYSCLK_DIV1;

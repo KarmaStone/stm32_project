@@ -302,7 +302,7 @@
                 </option>
                 <option>
                     <name>IExtraOptions</name>
-                    <state>-f $PROJ_DIR$\..\startup\keyboard\config.cfg
+                    <state>-f $PROJ_DIR$\..\startup\keyboard\config.cfg
 </state>
                 </option>
                 <option>
@@ -348,42 +348,41 @@
                 <option>
                     <name>CCIncludePath2</name>
                     <state>$PROJ_DIR$\..\startup\keyboard</state>
-                    <state>$PROJ_DIR$/../Drivers/STM32L4xx_HAL_Driver/Inc</state>
-                    <state>$PROJ_DIR$/../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy</state>
-                    <state>$PROJ_DIR$/../Middlewares/Third_Party/FreeRTOS/Source/include</state>
-                    <state>$PROJ_DIR$/../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS</state>
-                    <state>$PROJ_DIR$/../Middlewares/Third_Party/FreeRTOS/Source/portable/IAR/ARM_CM4F</state>
-                    <state>$PROJ_DIR$/../Drivers/CMSIS/Device/ST/STM32L4xx/Include</state>
-                    <state>$PROJ_DIR$/../Drivers/CMSIS/Include</state>
-                    <state>$PROJ_DIR$\..\Middlewares\private\list</state>
-                    <state>$PROJ_DIR$\..\Middlewares\private\utilities</state>
-                    <state>$PROJ_DIR$\..\Middlewares\private\priv_os</state>
-                    <state>$PROJ_DIR$\..\Drivers\platform\serial</state>
+                    <state>$PROJ_DIR$\..\Drivers/STM32L4xx_HAL_Driver/Inc</state>
+                    <state>$PROJ_DIR$\..\Drivers/STM32L4xx_HAL_Driver/Inc/Legacy</state>
+                    <state>$PROJ_DIR$\..\Drivers/CMSIS/Device/ST/STM32L4xx/Include</state>
+                    <state>$PROJ_DIR$\..\Drivers/CMSIS/Include</state>
+                    <state>$PROJ_DIR$\..\Drivers\platform\keyboard\pwr_mng</state>
+                    <state>$PROJ_DIR$\..\Drivers\platform\keyboard\iwdg</state>
+                    <state>$PROJ_DIR$\..\Drivers\platform\keyboard\lpuart1</state>
+                    <state>$PROJ_DIR$\..\Drivers\platform\keyboard\system_wakeup</state>
+                    <state>$PROJ_DIR$\..\Drivers\platform\keyboard\i2c</state>
+                    <state>$PROJ_DIR$\..\Drivers\platform\keyboard\io_irq</state>
+                    <state>$PROJ_DIR$\..\Drivers\platform\keyboard\spi</state>
+                    <state>$PROJ_DIR$\..\Drivers\platform\keyboard\serial</state>
+                    <state>$PROJ_DIR$\..\Drivers\modules\flash\winbond</state>
+                    <state>$PROJ_DIR$\..\Drivers\modules\flash</state>
                     <state>$PROJ_DIR$\..\application\shell_cmd</state>
                     <state>$PROJ_DIR$\..\registeredstart\init_d</state>
                     <state>$PROJ_DIR$\..\registeredstart\miscdevice</state>
                     <state>$PROJ_DIR$\..\registeredstart\register</state>
                     <state>$PROJ_DIR$\..\components\time</state>
                     <state>$PROJ_DIR$\..\components\cm_backtrace</state>
-                    <state>$PROJ_DIR$\..\Drivers\platform\pwr_mng</state>
-                    <state>$PROJ_DIR$\..\Drivers\platform\iwdg</state>
-                    <state>$PROJ_DIR$\..\components\watchdog</state>
-                    <state>$PROJ_DIR$\..\Drivers\platform\lpuart1</state>
                     <state>$PROJ_DIR$\..\components\sleep_time</state>
-                    <state>$PROJ_DIR$\..\application\bt_task</state>
-                    <state>$PROJ_DIR$\..\Drivers\platform\system_wakeup</state>
-                    <state>$PROJ_DIR$\..\Drivers\platform\i2c</state>
-                    <state>$PROJ_DIR$\..\Drivers\platform\io_irq</state>
-                    <state>$PROJ_DIR$\..\Drivers\platform\spi</state>
-                    <state>$PROJ_DIR$\..\Drivers\modules\flash\winbond</state>
-                    <state>$PROJ_DIR$\..\Drivers\modules\flash</state>
+                    <state>$PROJ_DIR$\..\components\watchdog</state>
                     <state>$PROJ_DIR$\..\components\nv_flash</state>
-                    <state>$PROJ_DIR$\..\Middlewares\private\nv_list</state>
-                    <state>$PROJ_DIR$\..\Middlewares\private\crc32</state>
                     <state>$PROJ_DIR$\..\components\password_list</state>
+                    <state>$PROJ_DIR$\..\components\ush_hid</state>
                     <state>$PROJ_DIR$\..\Middlewares\ST\STM32_USB_Device_Library\Core\Inc</state>
                     <state>$PROJ_DIR$\..\Middlewares\ST\STM32_USB_Device_Library\Class\HID\Inc</state>
-                    <state>$PROJ_DIR$\..\components\ush_hid</state>
+                    <state>$PROJ_DIR$\..\Middlewares\private\nv_list</state>
+                    <state>$PROJ_DIR$\..\Middlewares\private\crc32</state>
+                    <state>$PROJ_DIR$\..\Middlewares\private\list</state>
+                    <state>$PROJ_DIR$\..\Middlewares\private\utilities</state>
+                    <state>$PROJ_DIR$\..\Middlewares\private\priv_os</state>
+                    <state>$PROJ_DIR$/../Middlewares/Third_Party/FreeRTOS/Source/include</state>
+                    <state>$PROJ_DIR$/../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS</state>
+                    <state>$PROJ_DIR$/../Middlewares/Third_Party/FreeRTOS/Source/portable/IAR/ARM_CM4F</state>
                 </option>
                 <option>
                     <name>CCStdIncCheck</name>
@@ -649,7 +648,7 @@
                 </option>
                 <option>
                     <name>AUserIncludes</name>
-                    <state>$PROJ_DIR$\..\\startup</state>
+                    <state>$PROJ_DIR$\..\\startup\keyboard</state>
                 </option>
                 <option>
                     <name>AExtraOptionsCheckV2</name>
@@ -2295,37 +2294,88 @@
         </group>
         <group>
             <name>modules</name>
+            <group>
+                <name>rgb_led</name>
+                <group>
+                    <name>ws2812b</name>
+                    <file>
+                        <name>$PROJ_DIR$\..\Drivers\modules\rgb_led\ws2812b\ws2812b.c</name>
+                    </file>
+                    <file>
+                        <name>$PROJ_DIR$\..\Drivers\modules\rgb_led\ws2812b\ws2812b.h</name>
+                    </file>
+                </group>
+            </group>
         </group>
         <group>
             <name>platform</name>
             <group>
-                <name>pwr_mng</name>
+                <name>iwdg</name>
                 <file>
-                    <name>$PROJ_DIR$\..\Drivers\platform\pwr_mng\pwr.c</name>
+                    <name>$PROJ_DIR$\..\Drivers\platform\keyboard\iwdg\iwdg.c</name>
                 </file>
                 <file>
-                    <name>$PROJ_DIR$\..\Drivers\platform\pwr_mng\pwr.h</name>
+                    <name>$PROJ_DIR$\..\Drivers\platform\keyboard\iwdg\iwdg.h</name>
+                </file>
+            </group>
+            <group>
+                <name>lptim</name>
+                <file>
+                    <name>$PROJ_DIR$\..\Drivers\platform\keyboard\lptim1\lptim.c</name>
+                </file>
+                <file>
+                    <name>$PROJ_DIR$\..\Drivers\platform\keyboard\lptim1\lptim.h</name>
+                </file>
+            </group>
+            <group>
+                <name>pwr_mng</name>
+                <file>
+                    <name>$PROJ_DIR$\..\Drivers\platform\keyboard\pwr_mng\pwr.c</name>
+                </file>
+                <file>
+                    <name>$PROJ_DIR$\..\Drivers\platform\keyboard\pwr_mng\pwr.h</name>
+                </file>
+            </group>
+            <group>
+                <name>rtc</name>
+                <file>
+                    <name>$PROJ_DIR$\..\Drivers\platform\keyboard\rtc\stm32l4\stm32l4_rtc.c</name>
+                </file>
+                <file>
+                    <name>$PROJ_DIR$\..\Drivers\platform\keyboard\rtc\stm32l4\stm32l4_rtc.h</name>
                 </file>
             </group>
             <group>
                 <name>serial</name>
                 <file>
-                    <name>$PROJ_DIR$\..\Drivers\platform\serial\com_port1.c</name>
+                    <name>$PROJ_DIR$\..\Drivers\platform\keyboard\serial\com_port1.c</name>
                 </file>
                 <file>
-                    <name>$PROJ_DIR$\..\Drivers\platform\serial\com_port1.h</name>
+                    <name>$PROJ_DIR$\..\Drivers\platform\keyboard\serial\com_port1.h</name>
                 </file>
                 <file>
-                    <name>$PROJ_DIR$\..\Drivers\platform\serial\com_port2.c</name>
+                    <name>$PROJ_DIR$\..\Drivers\platform\keyboard\serial\com_port2.c</name>
                 </file>
                 <file>
-                    <name>$PROJ_DIR$\..\Drivers\platform\serial\com_port2.h</name>
+                    <name>$PROJ_DIR$\..\Drivers\platform\keyboard\serial\com_port2.h</name>
                 </file>
                 <file>
-                    <name>$PROJ_DIR$\..\Drivers\platform\serial\serialx.c</name>
+                    <name>$PROJ_DIR$\..\Drivers\platform\keyboard\serial\serialx.c</name>
                 </file>
                 <file>
-                    <name>$PROJ_DIR$\..\Drivers\platform\serial\serialx.h</name>
+                    <name>$PROJ_DIR$\..\Drivers\platform\keyboard\serial\serialx.h</name>
+                </file>
+            </group>
+            <group>
+                <name>spi</name>
+                <file>
+                    <name>$PROJ_DIR$\..\Drivers\platform\keyboard\spi\spi3.c</name>
+                </file>
+                <file>
+                    <name>$PROJ_DIR$\..\Drivers\platform\keyboard\spi\spi3.h</name>
+                </file>
+                <file>
+                    <name>$PROJ_DIR$\..\Drivers\platform\keyboard\spi\spix.h</name>
                 </file>
             </group>
         </group>

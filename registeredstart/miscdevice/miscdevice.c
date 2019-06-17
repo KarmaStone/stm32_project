@@ -72,7 +72,7 @@ int misc_register(struct miscdevice *misc)
     
     if ( misc_list_empty(misc) != NULL )
     {
-        INIT_PRINT(INIT_FAIL,"%s hasbeen register device" , misc->name);
+        INIT_PRINT(INIT_FAIL,"%s hasbeen register" , misc->name);
 		return -EINVAL;
     }
 	if (misc->minor != MISC_DYNAMIC_MINOR)
@@ -91,11 +91,11 @@ int misc_register(struct miscdevice *misc)
 	misc->major = MISC_MAJOR;
 	if (list_add_node_tail(msicdev_list, misc) == NULL)
 	{
-        INIT_PRINT(INIT_FAIL,"%s register device" , misc->name);
+        INIT_PRINT(INIT_FAIL,"%s register" , misc->name);
 		return -ENOMEM;
 	}
     
-    INIT_PRINT(INIT_OK,"%s register device" , misc->name);
+    INIT_PRINT(INIT_OK,"%s register" , misc->name);
 
 	return err;
 }

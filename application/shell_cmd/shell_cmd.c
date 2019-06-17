@@ -593,7 +593,8 @@ static void shell_cmd_task(void const *pvParameters)
     char len;
 
     configASSERT(((unsigned long)pvParameters) == 0);
-
+    
+    
     fd = c_open("com2", 0);
 
     INIT_PRINT( (fd==NULL)?INIT_FAIL:INIT_OK,"open serial_debug");
@@ -604,6 +605,8 @@ static void shell_cmd_task(void const *pvParameters)
         osThreadTerminate(shellcmd_handle);
     }
 
+    c_open("ws2812b" , 0);
+    
     while (1)
     {
       

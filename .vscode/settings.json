@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "cm_backtrace.h": "c",
+        "serialx.h": "c"
+    }
+}

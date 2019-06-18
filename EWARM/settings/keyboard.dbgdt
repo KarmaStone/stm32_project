@@ -935,7 +935,7 @@
                     <item>fd</item>
                     <item>spifd</item>
                     <item>spi_device</item>
-                    <item></item>
+                    <item />
                 </expressions>
                 <col-names>
                     <item>Expression</item>

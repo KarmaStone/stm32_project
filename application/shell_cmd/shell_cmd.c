@@ -607,6 +607,8 @@ static void shell_cmd_task(void const *pvParameters)
 
     c_open("ws2812b" , 0);
     
+    c_open("gpio-keys" , 0);
+    
     while (1)
     {
       

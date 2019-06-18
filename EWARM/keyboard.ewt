@@ -2584,6 +2584,15 @@
         <group>
             <name>platform</name>
             <group>
+                <name>gpio_keys</name>
+                <file>
+                    <name>$PROJ_DIR$\..\Drivers\platform\keyboard\gpio_keys\gpio_keys.c</name>
+                </file>
+                <file>
+                    <name>$PROJ_DIR$\..\Drivers\platform\keyboard\gpio_keys\gpio_keys.h</name>
+                </file>
+            </group>
+            <group>
                 <name>iwdg</name>
                 <file>
                     <name>$PROJ_DIR$\..\Drivers\platform\keyboard\iwdg\iwdg.c</name>

@@ -77,6 +77,8 @@ C:\Users\pc\Desktop\stm32_project\EWARM/../Middlewares/Third_Party/FreeRTOS/Sour
 -I
 C:\Users\pc\Desktop\stm32_project\EWARM/../Middlewares/Third_Party/FreeRTOS/Source/portable/IAR/ARM_CM4F
 -I
+C:\Users\pc\Desktop\stm32_project\EWARM\..\Drivers\modules\ush_hid
+-I
 C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.1_2\arm\CMSIS\Core\Include
 -I
 C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.1_2\arm\CMSIS\DSP\Include
@@ -156,6 +158,8 @@ C:\Users\pc\Desktop\stm32_project\Middlewares\Third_Party\FreeRTOS\Source\includ
 C:\Users\pc\Desktop\stm32_project\Middlewares\Third_Party\FreeRTOS\Source\CMSIS_RTOS
 -I
 C:\Users\pc\Desktop\stm32_project\Middlewares\Third_Party\FreeRTOS\Source\portable\IAR\ARM_CM4F
+-I
+C:\Users\pc\Desktop\stm32_project\Drivers\modules\ush_hid
 -I
 C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.1_2\arm\CMSIS\Core\Include
 -I

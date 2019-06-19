@@ -3,7 +3,7 @@
 static list *msicdev_list;
 static list_iter *msicdev_list_iter;
 static uint8_t DYNAMIC_MINORS = DYNAMIC_MINORS_MAX + 1;
-static sc_mutex_t misc_mtx;
+sc_mutex_t misc_mtx;
 
 int misc_init(void)
 {

@@ -1,9 +1,9 @@
-"C:\Users\pc\Desktop\stm32_project\components\ush_hid\usb_device.c"
+"C:\Users\pc\Desktop\stm32_project\Drivers\modules\ush_hid\usb_device.c"
 -std=c11
 -ferror-limit=0
 -fbracket-depth=512
 -I
-C:\Users\pc\Desktop\stm32_project\components\ush_hid
+C:\Users\pc\Desktop\stm32_project\Drivers\modules\ush_hid
 -I
 C:\Users\pc\Desktop\stm32_project\EWARM\..\startup\keyboard
 -I
@@ -76,6 +76,8 @@ C:\Users\pc\Desktop\stm32_project\EWARM/../Middlewares/Third_Party/FreeRTOS/Sour
 C:\Users\pc\Desktop\stm32_project\EWARM/../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS
 -I
 C:\Users\pc\Desktop\stm32_project\EWARM/../Middlewares/Third_Party/FreeRTOS/Source/portable/IAR/ARM_CM4F
+-I
+C:\Users\pc\Desktop\stm32_project\EWARM\..\Drivers\modules\ush_hid
 -I
 C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.1_2\arm\CMSIS\Core\Include
 -I
@@ -156,6 +158,8 @@ C:\Users\pc\Desktop\stm32_project\Middlewares\Third_Party\FreeRTOS\Source\includ
 C:\Users\pc\Desktop\stm32_project\Middlewares\Third_Party\FreeRTOS\Source\CMSIS_RTOS
 -I
 C:\Users\pc\Desktop\stm32_project\Middlewares\Third_Party\FreeRTOS\Source\portable\IAR\ARM_CM4F
+-I
+C:\Users\pc\Desktop\stm32_project\Drivers\modules\ush_hid
 -I
 C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.1_2\arm\CMSIS\Core\Include
 -I

@@ -487,7 +487,7 @@ int do_help(cmd_tbl_t *cmdtp, int flag, int argc, char *argv[])
 
         if (cmd_items > 30)
         {
-            log(ERR, "cmd_array定义的太少，请增加,cmd_items=%d.\n", cmd_items);
+            log(ERR, "cmd_array定义的太少，请�?�加,cmd_items=%d.\n", cmd_items);
         }
         /* Make array of commands from .uboot_cmd section */
         cmdtp = __shell_cmd_start;
@@ -606,8 +606,6 @@ static void shell_cmd_task(void const *pvParameters)
     }
 
     c_open("ws2812b" , 0);
-    
-    c_open("gpio-keys" , 0);
     
     while (1)
     {

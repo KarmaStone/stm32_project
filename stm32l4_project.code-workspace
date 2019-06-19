@@ -1,0 +1,20 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"unit.h": "c",
+			"time_sleep.h": "c",
+			"syswakeup1.h": "c",
+			"io_irq_line7.h": "c",
+			"mpu_wrappers.h": "c",
+			"priv_os.h": "c",
+			"queue.h": "c",
+			"timers.h": "c",
+			"task.h": "c"
+		}
+	}
+}

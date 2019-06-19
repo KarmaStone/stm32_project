@@ -2386,6 +2386,15 @@
                 <name>$PROJ_DIR$\..\application\shell_cmd\shell_cmd.h</name>
             </file>
         </group>
+        <group>
+            <name>usb_keys</name>
+            <file>
+                <name>$PROJ_DIR$\..\application\usb_keys\usb_keys.c</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\..\application\usb_keys\usb_keys.h</name>
+            </file>
+        </group>
     </group>
     <group>
         <name>components</name>
@@ -2423,33 +2432,6 @@
             </file>
             <file>
                 <name>$PROJ_DIR$\..\components\time\time.h</name>
-            </file>
-        </group>
-        <group>
-            <name>usb_hid</name>
-            <file>
-                <name>$PROJ_DIR$\..\components\ush_hid\usb_device.c</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\..\components\ush_hid\usb_device.h</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\..\components\ush_hid\usbd_conf.c</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\..\components\ush_hid\usbd_conf.h</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\..\components\ush_hid\usbd_desc.c</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\..\components\ush_hid\usbd_desc.h</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\..\components\ush_hid\user_diskio.c</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\..\components\ush_hid\user_diskio.h</name>
             </file>
         </group>
         <group>
@@ -2579,6 +2561,27 @@
                         <name>$PROJ_DIR$\..\Drivers\modules\rgb_led\ws2812b\ws2812b.h</name>
                     </file>
                 </group>
+            </group>
+            <group>
+                <name>usb_hid</name>
+                <file>
+                    <name>$PROJ_DIR$\..\Drivers\modules\ush_hid\usb_device.c</name>
+                </file>
+                <file>
+                    <name>$PROJ_DIR$\..\Drivers\modules\ush_hid\usb_device.h</name>
+                </file>
+                <file>
+                    <name>$PROJ_DIR$\..\Drivers\modules\ush_hid\usbd_conf.c</name>
+                </file>
+                <file>
+                    <name>$PROJ_DIR$\..\Drivers\modules\ush_hid\usbd_conf.h</name>
+                </file>
+                <file>
+                    <name>$PROJ_DIR$\..\Drivers\modules\ush_hid\usbd_desc.c</name>
+                </file>
+                <file>
+                    <name>$PROJ_DIR$\..\Drivers\modules\ush_hid\usbd_desc.h</name>
+                </file>
             </group>
         </group>
         <group>

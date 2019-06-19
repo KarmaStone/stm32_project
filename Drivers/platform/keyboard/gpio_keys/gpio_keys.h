@@ -11,6 +11,7 @@
   * @}
   */
 #include <stdbool.h>
+#include <stdlib.h>
 #include "stm32l4xx_hal.h"
 #include "major.h"
 #include "unit.h"

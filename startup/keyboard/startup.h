@@ -11,6 +11,7 @@ extern "C"
 
 #include "serial1.h"
   
+extern void com2_hal_init( void );
 #define HAL_Debug_init com2_hal_init
 
   

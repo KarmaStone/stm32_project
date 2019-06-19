@@ -605,8 +605,6 @@ static void shell_cmd_task(void const *pvParameters)
         osThreadTerminate(shellcmd_handle);
     }
 
-    c_open("ws2812b" , 0);
-    
     while (1)
     {
       

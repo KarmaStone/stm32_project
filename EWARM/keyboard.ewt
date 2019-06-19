@@ -2372,6 +2372,15 @@
     <group>
         <name>application</name>
         <group>
+            <name>rgb</name>
+            <file>
+                <name>$PROJ_DIR$\..\application\rgb\rgb.c</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\..\application\rgb\rgb.h</name>
+            </file>
+        </group>
+        <group>
             <name>shell</name>
             <file>
                 <name>$PROJ_DIR$\..\application\shell_cmd\cmd_ls.c</name>

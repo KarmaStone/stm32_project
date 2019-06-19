@@ -174,7 +174,7 @@ int serial_open(FIL_HAND *fd)
     serial_hal_init(dev);
 
     dev->mutex = creat_semqphore();
-    INIT_PRINT((dev->mutex == NULL) ? INIT_FAIL : INIT_OK, "serial debug semqphore creat");
+    INIT_PRINT((dev->mutex == NULL) ? INIT_FAIL : INIT_OK, "\nserial debug semqphore creat");
 
     HAL_UART_Receive_DMA(&dev->com_handle, dev->buf, dev->max_size);
     __HAL_UART_CLEAR_IDLEFLAG(&dev->com_handle);

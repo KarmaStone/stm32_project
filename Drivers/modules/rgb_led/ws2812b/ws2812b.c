@@ -4,6 +4,11 @@
 
 static DEV_HAND spifd;
 
+uint8_t rBuffer[PIXEL_MAX] = {0};
+uint8_t gBuffer[PIXEL_MAX] = {0};
+uint8_t bBuffer[PIXEL_MAX] = {0};
+
+
 static void send_bytes(uint8_t dat)
 {
     uint8_t i = 0;
@@ -68,9 +73,6 @@ void set_pixel_color(uint16_t n, uint8_t r, uint8_t g, uint8_t b)
     pixel_update();
 }
 
-uint8_t rBuffer[PIXEL_MAX] = {0};
-uint8_t gBuffer[PIXEL_MAX] = {0};
-uint8_t bBuffer[PIXEL_MAX] = {0};
 
 void set_pixel_color_32bits(uint16_t n, uint32_t c)
 {
@@ -154,23 +156,36 @@ static int ws2812_open(FIL_HAND *fd)
     spifd = c_open("spi3", 0);
     INIT_PRINT((spifd == NULL) ? INIT_FAIL : INIT_OK, "open spi3");
 
+    memset( rBuffer , 0 , PIXEL_MAX);
+    memset( gBuffer , 0 , PIXEL_MAX);
+    memset( bBuffer , 0 , PIXEL_MAX);
     
     c_write(spifd, res_code, 50);
-    set_all_pixel_color(0, 0, 0);
-    HAL_Delay(50);
-    set_all_pixel_color(0, 0, 0);
-    HAL_Delay(50);
     
-    set_all_pixel_color(47,79,79);
-    //theaterChaseRainbow(20);
     return 0;
 }
 
+static struct rgb_type
+{
+    uint8_t r;
+    uint8_t g;
+    uint8_t b;
+};
+
 int ws2812_write(FIL_HAND *fd, const void *buf, uint32_t count)
 {
-    uint8_t *data = (uint8_t *)buf;
-    
-    c_write(spifd , data , count);
+    struct rgb_type *t = (struct rgb_type *)buf;
+    uint8_t i = 0;
+
+    if( count > PIXEL_MAX)
+    {
+        log(ERR , "")
+    }
+    for (i = 0; i < PIXEL_MAX; i++)
+    {
+        send_rgb_bytes(t->r[i], t->g[i], t->b[i]);
+    }
+    pixel_update();
     
     return 0;
 }
